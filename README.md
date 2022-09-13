@@ -1,5 +1,9 @@
 # neon-hyprland-theme
 
+## Screenshot
+
+https://user-images.githubusercontent.com/36456160/189811218-d1acf622-63d0-45b8-9b28-d32cb938a08a.mp4
+
 ## Installation
 For complete system config, please see https://github.com/taylor85345/hyprland-dotfiles
 
@@ -22,4 +26,3 @@ For complete system config, please see https://github.com/taylor85345/hyprland-d
 - [macchina](https://github.com/Macchina-CLI/macchina) - (Optional) Fetch Script
 - [socat](http://www.dest-unreach.org/socat/) - Socket utility for eww workspace module
 - [geticons](https://git.sr.ht/~zethra/geticons) - CLI tool for locating icons
-
