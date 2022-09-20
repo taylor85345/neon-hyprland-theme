@@ -1,6 +1,7 @@
 ;; Variables
 
 (include "sidebar.yuck")
+(include "notifications.yuck")
 
 (defpoll clock_time :interval "5s" "date '+\%l\%M \%p'")
 (defpoll clock_date :interval "1h" "date '+%b %d, %Y'")
@@ -34,7 +35,7 @@
         (image 
           :class "launcher-icon"
           :path "favicon.ico"
-          :image-width "36"))
+          :image-width 36))
     (button
         :onclick "rofi -show filebrowser &"
         :class "iconsearch" "")
@@ -53,8 +54,8 @@
 	    :space-evenly "false"
 	    :vexpand "false"
 	    :hexpand "false" 
-      (literal 
-        :content appname)
+        (literal 
+            :content appname)
 	    (revealer
 	      :transition "slideright"
 		    :reveal control_reveal

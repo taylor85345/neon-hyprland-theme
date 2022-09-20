@@ -16,7 +16,7 @@ for id in "${NB_MONITORS[@]}"; do
     bar="bar$id"
     hyprctl dispatch focusmonitor "$id"
     ${EWW} open "$bar" 
-    [[ $id == 0 ]] && ${EWW} open sidebar
+    [[ $id == 0 ]] && ${EWW} open-many sidebar notifications
 done
 
     hyprctl dispatch focusmonitor "$focusmon"

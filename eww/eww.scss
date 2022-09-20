@@ -7,7 +7,7 @@ Created by saimoom **/
 }
 
 $background: rgba(00, 00, 00, 0.7);
-$widget-background: rgba(56, 56, 56, 0.2);
+$widget-background: rgba(30, 30, 30, 0.4);
 $shadow:    #0B0B0B;
 $grey:      #606060;
 
@@ -31,6 +31,7 @@ $white:     #FDFDFD;
 
 .side{
     background-color: $background;
+    border-width: 0px;
     padding: 0px 30px 0px 30px;
 }
 
@@ -570,4 +571,63 @@ scale trough {
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
   color: $green;
+}
+
+.notification {
+	all: unset;
+    background-color: $widget-background;
+	padding: 20px 25px 20px 17px;
+    margin: 0px 15px 0px 15px;
+	border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $red;}
+
+.notification-header {
+	all: unset;
+    background-color: $widget-background;
+	padding: 20px 25px 20px 17px;
+    margin: 20px 15px 10px 15px;
+	border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $green;}
+
+.notification-icon {
+    color: $white;
+    font-size: 36px;
+    margin: 0px 20px 0px 10px;
+}
+
+.notification-appname {
+    font-family: "Inter Nerd Font";
+    font-size: 14px;
+    font-weight: bold;
+    color: $orange;
+}
+
+.notification-summary {
+    font-family: "Inter Nerd Font";
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+}
+
+.notification-body {
+    font-family: "Inter Nerd Font";
+    font-size: 14px;
+    color: $white;
+}
+
+.notification-label {
+    font-family: "Mononoki Nerd Font";
+    font-size: 30px;
+    color: $blue;
+    margin: 0px 50px 0px 0px;
+}
+.notification-action {
+    font-family: "Mononoki Nerd Font";
+    font-size: 36px;
+    color: $white;
+    margin: 0px 0px 0px 20px;
 }
