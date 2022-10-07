@@ -2,7 +2,7 @@
     :geometry (geometry :x "0px"
                         :y "0px"
                         :width "1px"
-                        :height "1024"
+                        :height "93%"
                         :anchor "bottom right")
     :stacking "fg"
     :monitor "0"
@@ -11,7 +11,6 @@
 (defwidget notif-panel [] 
 	(eventbox 
 	    :halign "start" 
-	    :onhover "${EWW_CMD} update rightside=true"
 	    :onhoverlost "${EWW_CMD} update rightside=false"
 		(revealer 
 		    :transition "slideleft"
@@ -46,7 +45,11 @@
                 (button
                     :class "notification-action"
                     :tooltip "Pause/Resume Notifications"
-                    :onclick "dunstctl set-paused toggle" "")))
+                    :onclick "dunstctl set-paused toggle" "")
+                (button
+                    :class "notification-action"
+                    :tooltip "Dismiss All"
+                    :onclick "pkill dunst && hyprctl dispatch exec dunst && dunstctl history > /tmp/dunst-history.json" "")))
         (scroll
             :vscroll "true"
             :hscroll "false"

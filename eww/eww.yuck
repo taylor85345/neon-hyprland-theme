@@ -122,7 +122,7 @@
 			        :min 0
 			        :onchange "amixer -D pulse sset Master {}%" ))
 	        (button
-	            :onclick "scripts/pop audio"
+	            :onclick "scripts/pop audio_ctl"
 	            :class "volume_icon"
 	            "墳"))))
 
@@ -196,6 +196,16 @@
                   :class "clock_date_class"
                   :onclick "scripts/pop calendar" clock_date)))))
   
+(defwidget notif_button []
+  (box
+    :class "notif_button"
+    :space-evenly "false"
+    :orientation "h"
+    (button
+	    :onclick "if ${EWW_CMD} state | grep 'rightside: false' ; then ${EWW_CMD} update rightside=true ; else ${EWW_CMD} update rightside=false ; fi"
+      (label
+      :text ""))))
+  
 (defwidget sep []
   (box 
     :class "module-2"
@@ -244,6 +254,7 @@
     (mem)
     (sep)
     (clock_module)
+    (notif_button)
 ))
 
 (defwidget bar_layout []
