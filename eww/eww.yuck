@@ -122,7 +122,7 @@
 			        :min 0
 			        :onchange "amixer -D pulse sset Master {}%" ))
 	        (button
-	            :onclick "scripts/pop audio_ctl"
+	            :onclick "${EWW_CMD} open --toggle audio_ctl"
 	            :class "volume_icon"
 	            "墳"))))
 
@@ -157,7 +157,7 @@
             :class "batbar"
             :thickness 4
             (button 
-                :onclick "scripts/pop system"
+                :onclick "${EWW_CMD} open --toggle system"
                 :class "iconbat"
                 :tooltip "battery on ${EWW_BATTERY["BAT0"].capacity}%"
                 " "))))
@@ -172,7 +172,7 @@
             :class "membar"
             :thickness 4
             (button 
-                :onclick "scripts/pop system"
+                :onclick "${EWW_CMD} open --toggle system"
                 :class "iconmem"
                 :tooltip "using ${EWW_RAM.used_mem_perc}% ram"
                 " "))))
@@ -194,7 +194,7 @@
   		    :duration "350ms"
               (button 
                   :class "clock_date_class"
-                  :onclick "scripts/pop calendar" clock_date)))))
+                  :onclick "${EWW_CMD} open --toggle calendar" clock_date)))))
   
 (defwidget notif_button []
   (box
