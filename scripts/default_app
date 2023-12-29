@@ -1,10 +1,10 @@
 #!/bin/bash
-TERM=kitty          #Tag 1
+TERM="kitty --single-instance"          #Tag 1
 BROWSER=brave       #Tag 2
 DOC=libreoffice     #Tag 3
 FILE=dolphin        #Tag 4
 PLAYER=vlc          #Tag 5
-GAME=steam-native   #Tag 6
+GAME="steam-native -pipewire"   #Tag 6
 PHOTO=krita         #Tag 7
 SANDBOX="mailspring --no-sandbox"  #Tag 8
 DEV=neovide         #Tag 9
